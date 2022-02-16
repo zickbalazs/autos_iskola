@@ -11,10 +11,16 @@ body{
 article{
     background-color: #241e1e;
     color:white;
-    
+}
+article p{
+    margin: 0;
+    padding: 10px;
 }
 header{
     text-align: center;
+    color: white;
+    background: rgb(36,30,30);
+    background: linear-gradient(356deg, #241e1e 0%, rgba(36,30,30,0.6530813008797269) 100%); 
 }
 header p{
     font-style:italic;
@@ -41,14 +47,16 @@ table img{
     width: 50%;
     transition: width 0.2s, height 0.2s ease-out;
 }
-table img:hover{
+td:last-of-type img:hover{
     width: 75%;
 }
 table{
     width: 90%;
     border: 1px solid white;
+    /*Árnyalatos háttér*/
     background: rgb(36,30,30);
     background: linear-gradient(306deg, rgba(36,30,30,0.8855742980786064) 0%, rgba(197,147,18,0.8491597322522759) 26%, rgba(204,152,17,0.6446779395351891) 73%, rgba(36,30,30,0) 100%); 
+    /*Ne essen össze a border, hogy kerek lehessen a kinti rész*/
     border-collapse: separate !important;
     border-spacing: 0;
     border-radius: 5px;
@@ -65,6 +73,10 @@ tbody h3{
 tbody td:first-of-type{
     width: 25%;
     border-right: 1px solid white;
+}
+tbody td:first-of-type img{
+    border-radius: 50%;
+    border: 1px solid brown;
 }
 tbody td:last-of-type{
     width: 75%;
@@ -89,6 +101,7 @@ th{
     border-bottom: 1px solid white;
 }
 @media screen and (max-width: 600px){
+    /*Táblázatok egyenként való kijelzése*/
     .alt{
         display: block;
     }
