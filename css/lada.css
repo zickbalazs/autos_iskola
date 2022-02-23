@@ -10,11 +10,20 @@ body{
 }
 .oktato hr{
     width: 40%;
+    transition: width 0.2s ease-out;
+}
+.oktato hr:hover{
+    width: 60%;
 }
 .adatok{
     float:left;
     width: 30%;
     text-align: center;
+}
+#noround{
+    border-radius: 5px;
+    height: 300px;
+    border: 1px solid black;
 }
 .funfacts{
     display:flex;

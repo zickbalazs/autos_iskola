@@ -77,9 +77,24 @@ tbody td:first-of-type{
 tbody td:first-of-type img{
     border-radius: 50%;
     border: 1px solid brown;
+    transition: border-radius 0.1s;
+}
+tbody td:first-of-type img:hover{
+    border-radius: 0%;
+}
+header h1{
+    padding-top: 75px;
+}
+header p{
+    padding-bottom: 65px;
 }
 tbody td:last-of-type{
     width: 75%;
+}
+tbody td:last-of-type img{
+    border-radius: 5px;
+    border: 2px solid firebrick;
+    width: 50%;
 }
 h2, h1{
     text-align: center;
